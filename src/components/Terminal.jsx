@@ -11,11 +11,16 @@ function Terminal() {
                 <span id = 'green'></span>
             </div>
 
-            <h4 id = 'title'>guest@chungs-terminal.vercel.app:</h4>
+            <h4 id = 'title'>guest@chungs-terminal.vercel.app :</h4>
         </div>
 
         <div id = 'commandLine'>
-            <span>Inspired by Samuel Sandoval's terminal portfolio - Type <span>help</span> for a list of supported commands.</span>
+            <span>Inspired by <a className = 'original' href= 'https://samuelsandoval.me/'>samuelsandoval.me</a> - Type 
+                <span className = 'command'> help </span> 
+                for a list of supported commands.
+            </span>
+            <br></br>
+            <span className = 'prompt'><i class="fas fa-arrow-right"></i>  ~  </span>
         </div>
 
     </div>);

@@ -138,4 +138,19 @@
     width: 1000px;
     color: #8892B0;
     padding: 0.5rem;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+}
+
+.original, .original:visited {
+    text-decoration: none;
+    color: cyan;
+}
+
+.command {
+    color: #FA615C;
+}
+
+.prompt {
+    color: #9ddfd3;
 }

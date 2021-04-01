@@ -11,7 +11,7 @@ function Profile() {
 
         <h3 id = 'name'>Chung Au</h3>
 
-        <p className = 'desc'>Front-End Developer | Vanilla Enthusist </p>
+        <p className = 'desc'>Front-End Developer</p>
 
         <div id = 'socials'>
             <a className = 'icon' target="_blank" href="https://github.com/ChungGold"><i class="fab fa-github-square"></i></a>
