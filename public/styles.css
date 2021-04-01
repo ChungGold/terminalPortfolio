@@ -142,15 +142,15 @@
     line-height: 1.5rem;
 }
 
-.original, .original:visited {
+#original, #original:visited {
     text-decoration: none;
     color: cyan;
 }
 
-.command {
+#command {
     color: #FA615C;
 }
 
-.prompt {
+#prompt {
     color: #9ddfd3;
 }
