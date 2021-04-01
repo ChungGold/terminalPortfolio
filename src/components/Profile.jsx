@@ -4,18 +4,21 @@ import me from './me.png';
 
 function Profile() {
     return (<div id = 'profile'>
+
         <div id = 'me'>
             <img src = {me} alt ='Chung Au'></img>
         </div>
+
         <h3 id = 'name'>Chung Au</h3>
+
         <p className = 'desc'>Front-End Developer | Vanilla Enthusist </p>
-        {/* <p className = 'desc'>React | JavaScript | CSS | HTML</p>
-        <p className = 'desc'>Loading MERN stack</p> */}
+
         <div id = 'socials'>
-            <i class="icon fab fa-github-square"></i>
-            <i class="icon fab fa-linkedin"></i>
-            <i class="icon fas fa-envelope-square"></i>
+            <a className = 'icon' target="_blank" href="https://github.com/ChungGold"><i class="fab fa-github-square"></i></a>
+            <a className = 'icon' target="_blank" href="https://www.linkedin.com/in/chung-au/"><i class="fab fa-linkedin"></i></a>
+            <a className = 'icon' target="_blank" href="https://chung-au.vercel.app/"><i class="fas fa-envelope-square"></i></a>
         </div>
+
     </div>);
 }
 

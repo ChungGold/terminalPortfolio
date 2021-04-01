@@ -1,7 +1,9 @@
+/* EVERYTHING */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #root {
@@ -15,12 +17,14 @@
 }
 
 #container {
-    width: 1350px;
+    width: 1325px;
     height: 300px;
 
     display: flex;
     justify-content: space-between;
 }
+
+/* PROFILE COMPONENT */
 
 #profile {
     width: 300px;
@@ -69,7 +73,14 @@
 .icon {
     color: #8892B0;
     font-size: 1.5rem;
+    cursor: pointer;
 }
+
+.icon:hover {
+    color: white;
+}
+
+/* TERMINAL COMPONENT */
 
 #terminal {
     width: 1000px;
@@ -83,10 +94,48 @@
     height: 30px;
     width: 1000px;
     background: #433F45;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#exit {
+    height: 30px;
+    width: 100px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#red, #yellow, #green {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+
+#red {
+    background: #FA615C;
+}
+
+#yellow {
+    background: #FFBD48;
+}
+
+#green {
+    background: #3FC950;
+}
+
+#title-container, #title {
+    color: #8892B0;
+    text-align: center;
+    width: 1000px;
+    line-height: 30px;
 }
 
 #commandLine {
     height:270px;
     width: 1000px;
-    border: red solid 1px;
+    color: #8892B0;
+    padding: 0.5rem;
 }
