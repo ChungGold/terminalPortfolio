@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    max-width: 100vw;
+    height: 100vh;
+    background: rgb(121,184,255);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    width: 1350px;
+    height: 300px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#profile {
+    width: 300px;
+    height: 300px;
+    background: #172A45;
+    border-radius: 5px;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#me {
+    width: 150px;
+    height: 150px;
+
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+#me img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#socials {
+    width: 300px;
+    height: 50px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: wrap row;
+}
+
+#name {
+    color: #cdd7f3;
+}
+
+.desc {
+    color: #8892B0;
+}
+
+.icon {
+    color: #8892B0;
+    font-size: 1.5rem;
+}
+
+#terminal {
+    width: 1000px;
+    height: 300px;
+    background: #172A45;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#bar {
+    height: 30px;
+    width: 1000px;
+    background: #433F45;
+}
+
+#commandLine {
+    height:270px;
+    width: 1000px;
+    border: red solid 1px;
+}
