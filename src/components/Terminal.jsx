@@ -15,7 +15,7 @@ function Terminal() {
         </div>
 
         <div id = 'commandLine'>
-            <span>Inspired by <a className = 'original' href= 'https://samuelsandoval.me/'>samuelsandoval.me</a> - Type 
+            <span> by <a className = 'original' href= 'https://samuelsandoval.me/'>samuelsandoval.me</a> - Type 
                 <span className = 'command'> help </span> 
                 for a list of supported commands.
             </span>
