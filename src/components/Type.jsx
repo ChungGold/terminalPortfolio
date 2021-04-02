@@ -2,13 +2,17 @@ function Type() {
     window.addEventListener('keydown', (event)=>{
 
         const prompt = document.getElementById('prompt');
-
-
+        let word = prompt.textContent;
 
         if (event.key === 'Backspace') {
+            let arr = word.split('');
+            arr.pop();
+            prompt.innerHTML = `<i class="fas fa-arrow-right"></i> `;
+            prompt.innerHTML +=
+            `${arr.join('')}`
+        } else if (event.key === 'Enter'){
             
         } else if (event.key === 'CapsLock' 
-        || event.key === 'Enter'
         || event.key === 'Shift' 
         || event.key === 'Control' 
         || event.key === 'Alt'

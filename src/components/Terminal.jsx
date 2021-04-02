@@ -20,7 +20,7 @@ function Terminal() {
                 for a list of supported commands.
             </span>
             <br></br>
-            <span id = 'prompt'><i class="fas fa-arrow-right"></i>  ~  </span>
+            <span id = 'prompt'><i class="fas fa-arrow-right"></i> </span>
         </div>
 
     </div>);
