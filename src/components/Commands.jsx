@@ -2,17 +2,18 @@ function Help() {
     const commandLine = document.getElementById('commandLine');
 
     commandLine.innerHTML +=
-    `<br><span>Commands:<span class ="commands"> help</span></span>`
+    `<br><span>Commands:<span class ="commands"> help</span></span>
+    <br>
+    <span class = 'prompt'><i class="fas fa-arrow-right"></i> </span>`
 }
 
 function Nope() {
-    // const prompt = document.getElementById('prompt');
-    // let word = prompt.textContent;
-
-    const commandLine = document.getElementById('commandLine');
+const commandLine = document.getElementById('commandLine');
 
     commandLine.innerHTML +=
-    `<br><span>Not a valid command.</span>`
+    `<br><span>Not a valid command.</span>
+    <br>
+    <span class = 'prompt'><i class="fas fa-arrow-right"></i> </span>`
 }
 
 export {Help, Nope};
