@@ -1,21 +1,31 @@
-function Type() {
-    window.addEventListener('keydown', (event)=>{
+import {Help, Nope} from './Commands';
 
-        const prompt = document.getElementById('prompt');
-        let word = prompt.textContent;
+function Type() {
+
+    window.addEventListener('keydown', (event)=>{
+        
+        const prompt = document.getElementsByClassName('prompt');
+
+        let counter = prompt.length - 1;
+
+        let line = prompt[counter];
+
+        let word = line.textContent;
 
         if (event.key === 'Backspace') {
             let arr = word.split('');
             arr.pop();
-            prompt.innerHTML = `<i class="fas fa-arrow-right"></i> `;
-            prompt.innerHTML +=
+            line.innerHTML = `<i class="fas fa-arrow-right"></i> `;
+            line.innerHTML +=
             `${arr.join('')}`
+    
         } else if (event.key === 'Enter'){
-            if (word = 'help') {
-                console.log('nice');
+            if (word.toUpperCase() === ' HELP') {
+                Help();
             } else {
-                console.log('nope');
+                Nope();
             }
+
         } else if (event.key === 'CapsLock' 
         || event.key === 'Shift' 
         || event.key === 'Control' 
@@ -48,8 +58,9 @@ function Type() {
         || event.key === 'F10'
         || event.key === 'F11'
         || event.key === 'F12'){
+
         } else {
-            prompt.innerHTML +=
+            line.innerHTML +=
             `${event.key}`
         }
     });

@@ -16,11 +16,11 @@ function Terminal() {
 
         <div id = 'commandLine'>
             <span> Inspired by <a id = 'original' href= 'https://samuelsandoval.me/'>samuelsandoval.me</a> - Type 
-                <span id = 'command'> help </span> 
+                <span class = 'commands'> help </span> 
                 for a list of supported commands.
             </span>
             <br></br>
-            <span id = 'prompt'><i class="fas fa-arrow-right"></i> </span>
+            <span className = 'prompt'><i class="fas fa-arrow-right"></i> </span>
         </div>
 
     </div>);

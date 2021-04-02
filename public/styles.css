@@ -127,7 +127,7 @@
 }
 
 #title-container, #title {
-    color: #8892B0;
+    color: #cdd7f3;
     text-align: center;
     width: 1000px;
     line-height: 30px;
@@ -136,7 +136,7 @@
 #commandLine {
     height:270px;
     width: 1000px;
-    color: #8892B0;
+    color: #cdd7f3;
     padding: 0.5rem;
     font-size: 0.8rem;
     line-height: 1.5rem;
@@ -147,10 +147,10 @@
     color: cyan;
 }
 
-#command {
+.commands {
     color: #FA615C;
 }
 
-#prompt {
+.prompt {
     color: #9ddfd3;
 }
