@@ -11,7 +11,11 @@ function Type() {
             prompt.innerHTML +=
             `${arr.join('')}`
         } else if (event.key === 'Enter'){
-            
+            if (word = 'help') {
+                console.log('nice');
+            } else {
+                console.log('nope');
+            }
         } else if (event.key === 'CapsLock' 
         || event.key === 'Shift' 
         || event.key === 'Control' 
