@@ -1,4 +1,4 @@
-import {Help, Nope} from './Commands';
+import {Help, Education, Stack, Clear} from './Commands';
 
 function Type() {
     let counter = 0;
@@ -11,19 +11,32 @@ function Type() {
 
         let word = line.textContent;
 
+        function Nope() {
+            const commandLine = document.getElementById('commandLine');
+            
+            commandLine.innerHTML +=
+            `<br><span><span class = 'invalid'>${word}</span>: command not found</span>
+            <br><span class = 'prompt'><i class="fas fa-angle-double-right"></i> </span>`
+        }
+
         if (event.key === 'Backspace') {
             let arr = word.split('');
             arr.pop();
-            line.innerHTML = `<i class="fas fa-arrow-right"></i> `;
+            line.innerHTML = `<i class="fas fa-angle-double-right"></i> `;
             line.innerHTML +=
             `${arr.join('')}`
     
         } else if (event.key === 'Enter'){
-            console.log(counter);
             counter++;
-            console.log(counter);
             if (word.toUpperCase() === ' HELP') {
                 Help();
+            } else if (word.toUpperCase() === ' EDUCATION') {
+                Education();
+            } else if (word.toUpperCase() === ' STACK') {
+                Stack();
+            } else if (word.toUpperCase() === ' CLEAR') {
+                Clear();
+                counter = 0;
             } else {
                 Nope();
             }

@@ -20,7 +20,7 @@ function Terminal() {
                 for a list of supported commands.
             </span>
             <br></br>
-            <span className = 'prompt'><i class="fas fa-arrow-right"></i> </span>
+            <span class = 'prompt'><i class="fas fa-angle-double-right"></i> </span>
         </div>
 
     </div>);
