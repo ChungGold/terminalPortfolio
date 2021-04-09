@@ -15,14 +15,14 @@ const Type = () =>  {
             const commandLine = document.getElementById('commandLine');
             
             commandLine.innerHTML +=
-            `<br><span><span className = 'invalid'>${word}</span>: command not found</span>
-            <br><span className = 'prompt'><i className="fas fa-angle-double-right"></i> </span>`
+            `<br><span><span class = 'invalid'>${word}</span>: command not found</span>
+            <br><span class = 'prompt'><i class ="fas fa-angle-double-right"></i> </span>`
         }
 
         if (event.key === 'Backspace') {
             let arr = word.split('');
             arr.pop();
-            line.innerHTML = `<i className="fas fa-angle-double-right"></i> `;
+            line.innerHTML = `<i class ="fas fa-angle-double-right"></i> `;
             line.innerHTML +=
             `${arr.join('')}`
     
