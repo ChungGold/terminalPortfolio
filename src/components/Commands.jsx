@@ -1,22 +1,15 @@
-function Help() {
+const Help = () => {
     const commandLine = document.getElementById('commandLine');
 
     commandLine.innerHTML +=
     `<br><span>List of commands:<span class ="commands"> help</span>
     ,<span class ="commands"> education</span>
-    ,<span class ="commands"> stack</span></span>
+    ,<span class ="commands"> stack</span>
+    ,<span class ="commands"> clear</span></span>
     <br><span class = 'prompt'><i class="fas fa-angle-double-right"></i> </span>`
 }
 
-// function Nope() {
-// const commandLine = document.getElementById('commandLine');
-
-//     commandLine.innerHTML +=
-//     `<br><span>command not found</span>
-//     <br><span class = 'prompt'><i class="fas fa-angle-double-right"></i> </span>`
-// }
-
-function Education() {
+const Education = () =>  {
     const commandLine = document.getElementById('commandLine');
 
     commandLine.innerHTML +=
@@ -25,7 +18,7 @@ function Education() {
     <br><span class = 'prompt'><i class="fas fa-angle-double-right"></i> </span>`
 }
 
-function Stack() {
+const Stack = () =>  {
     const commandLine = document.getElementById('commandLine');
 
     commandLine.innerHTML +=
@@ -34,7 +27,7 @@ function Stack() {
     <br><span class = 'prompt'><i class="fas fa-angle-double-right"></i> </span>`
 }
 
-function Clear() {
+const Clear = () => {
     const commandLine = document.getElementById('commandLine');
 
     commandLine.innerHTML =

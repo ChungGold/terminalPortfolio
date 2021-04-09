@@ -1,6 +1,6 @@
 import {Help, Education, Stack, Clear} from './Commands';
 
-function Type() {
+const Type = () =>  {
     let counter = 0;
 
     window.addEventListener('keydown', (event)=> {
@@ -11,7 +11,7 @@ function Type() {
 
         let word = line.textContent;
 
-        function Nope() {
+        const Nope = () =>  {
             const commandLine = document.getElementById('commandLine');
             
             commandLine.innerHTML +=

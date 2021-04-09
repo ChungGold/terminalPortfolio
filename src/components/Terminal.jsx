@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Terminal() {
+const Terminal = () =>  {
     return (<div id = 'terminal'>
 
         <div id = 'bar'>
@@ -16,11 +16,11 @@ function Terminal() {
 
         <div id = 'commandLine'>
             <span> Inspired by <a id = 'original' href= 'https://samuelsandoval.me/'>samuelsandoval.me</a> - Type 
-                <span class = 'commands'> help </span> 
+                <span className = 'commands'> help </span> 
                 for a list of supported commands.
             </span>
             <br></br>
-            <span class = 'prompt'><i class="fas fa-angle-double-right"></i> </span>
+            <span className = 'prompt'><i className="fas fa-angle-double-right"></i> </span>
         </div>
 
     </div>);
